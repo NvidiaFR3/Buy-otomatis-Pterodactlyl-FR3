@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy Pterodactyl Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <!-- PAGE 1 -->
+  <section id="page1" class="page">
+    <h1>Order Panel Pterodactyl</h1>
+    <form id="orderForm">
+      <label>Username
+        <input required name="username" placeholder="myuser123" autocomplete="off">
+      </label>
+      <label>Disk (GB)
+        <select required name="disk">
+          <option value="1">1 GB</option>
+          <option value="2">2 GB</option>
+          <option value="3">3 GB</option>
+          <option value="4">4 GB</option>
+          <option value="5">5 GB</option>
+          <option value="6">6 GB</option>
+          <option value="7">7 GB</option>
+          <option value="8">8 GB</option>
+          <option value="9">9 GB</option>
+          <option value="10">10 GB</option>
+          <option value="0">Unlimited</option>
+        </select>
+      </label>
+      <button type="submit">Buat Pesanan</button>
+    </form>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section id="page2" class="page hidden">
+    <h1>Pembayaran</h1>
+    <p>Transfer tepat: <strong id="amount"></strong> ke QRIS berikut:</p>
+    <img id="qris" alt="QRIS">
+    <p>ID Transaksi: <strong id="trxId"></strong></p>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section id="page3" class="page hidden">
+    <h1>✅ Pembayaran Selesai</h1>
+    <div id="panelInfo">
+      <p><strong>Username:</strong> <span id="pUser"></span></p>
+      <p><strong>Domain:</strong> <span id="pDomain"></span></p>
+      <p><strong>Password:</strong> <span id="pPass"></span></p>
+    </div>
+    <div class="warning">
+      ⚠️ MOHON DOWNLOAD DATA PANEL. KAMI HANYA MENGIRIM SATU KALI.  
+      Jika Anda keluar, halaman ini akan hilang.
+    </div>
+    <button id="downloadBtn">Download Data Panel (.txt)</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
